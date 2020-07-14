@@ -1,0 +1,8 @@
+
+<h2 innerHTML="{{api.single_post.getDetails()}}"></h2>
+<button (click)="savePost()">Save</button>
+
+
+<li *ngFor="let posts of api.all_posts.dataArray">
+    <a href="">{{posts.title}}</a> 
+</li>

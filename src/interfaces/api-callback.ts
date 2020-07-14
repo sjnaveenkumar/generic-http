@@ -1,6 +1,7 @@
-import { IApiSuccessResponseOptions, IApiErrorResponseOptions } from "./api-response-options";
+import { IResultOptions, IErrorOptions } from './api-callback-options';
 
-export interface IApiCallback {
-    onSuccess(options: IApiSuccessResponseOptions);
-    onError(options: IApiErrorResponseOptions);
+
+export interface ICallback {
+    onSuccess(resultData: IResultOptions);
+    onError(errorData: IErrorOptions);
 }
